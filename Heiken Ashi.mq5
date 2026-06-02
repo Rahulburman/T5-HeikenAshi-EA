@@ -46,10 +46,6 @@ int OnInit() {
    ArraySetAsSeries(haHigh, true);
    ArraySetAsSeries(haLow, true);
    
-   // Set plot colors for bullish and bearish candles
-   PlotIndexSetInteger(0, PLOT_COLOR_INDEX, 0, clrGreen);  // Bullish color (close > open)
-   PlotIndexSetInteger(0, PLOT_COLOR_INDEX, 1, clrRed);    // Bearish color (close < open)
-   
    Print("Heiken Ashi Indicator Initialized Successfully");
    
    return INIT_SUCCEEDED;
